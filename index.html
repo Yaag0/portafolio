@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yago Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas WebGL -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Status badge -->
+    <header class="status-badge">
+        <span class="status-dot">✦</span>
+        <span class="status-text">DISPONIBILIDAD INMEDIATA</span>
+    </header>
+
+    <!-- Enlaces -->
+    <div class="top-right-contacts">
+        <a href="mailto:sntiago.martinezc@gmail.com" target="_blank" rel="noopener noreferrer" class="cloud-link">CONTACTO</a>
+        <a href="https://github.com/Yaag0" target="_blank" rel="noopener noreferrer" class="cloud-link">GITHUB</a>
+        <a href="https://www.linkedin.com/in/santiago-mart%C3%ADnez-calle/" target="_blank" rel="noopener noreferrer" class="cloud-link">LINKEDIN</a>
+    </div>
+
+    <!-- Scroll -->
+    <main class="scroll-container">    
+        <section id="sec-inicio" class="section hero-section">
+            <div class="hero-center">
+                <h1 class="author-name">YAGO</h1>
+                <h3 class="author-real-name">Santiago Martínez</h3>
+                <p class="author-subtitle">FULL-STACK & SECURITY ENGINEER</p>
+            </div>
+            <div class="loading-builder">
+                <span style="--i:1;">U</span>
+                <span style="--i:2;">N</span>
+                <span style="--i:3;">D</span>
+                <span style="--i:4;">E</span>
+                <span style="--i:5;">R</span>
+                <span style="--i:6;">&nbsp;</span>
+                <span style="--i:7;">C</span>
+                <span style="--i:8;">O</span>
+                <span style="--i:9;">N</span>
+                <span style="--i:10;">S</span>
+                <span style="--i:11;">T</span>
+                <span style="--i:12;">R</span>
+                <span style="--i:13;">U</span>
+                <span style="--i:14;">C</span>
+                <span style="--i:15;">T</span>
+                <span style="--i:16;">I</span>
+                <span style="--i:17;">O</span>
+                <span style="--i:18;">N</span>
+                <span class="dots">...</span>
+            </div>
+        </section>
+
+        <!--<section id="sec-sobre-mi" class="section about-section">
+            
+            <div class="sigil-frame">
+                <h2 class="about-title">SOBRE MÍ</h2>
+                <div class="about-content">
+                    <p class="manifesto-paragraph">
+                        Desarrollador de software enfocado en la arquitectura de sistemas, la optimización y el diseño de experiencias visuales oscuras.
+                    </p>
+                    <p class="manifesto-paragraph">
+                        Moverse entre la métrica del código y la poesía visual. Construir en la sombra para dar orden al caos.
+                    </p>
+                </div>
+            </div>
+        </section>-->
+        <button class="music-toggle-btn" id="musicToggle" title="Música de ambiente">
+            <span class="music-icon">♫</span>
+        </button>
+
+        <audio id="ambientAudio" autoplay muted loop preload="auto">
+            <source src="assets/ambiente.mp3" type="audio/mpeg">
+        </audio>
+
+    </main>
+
+    <script src="./shader.js"></script>
+    <script src="./musica.js"></script>
+</body>
+</html>
