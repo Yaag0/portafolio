@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #ff0033;
+    color: #000000;           
+}
+::-webkit-selection {
+    background-color: #ff0033;
+    color: #000000;
+}
+
 body, html {
     width: 100%;
     background-color: #000;
@@ -37,18 +46,18 @@ body, html {
 .status-dot {
     font-size: 1rem; 
     color: #ff0033;
-    text-shadow: 0 0 10px #ff0033, 0 0 20px rgba(255, 0, 51, 0.5);
-    animation: pulse 1.5s infinite ease-in-out;
+    text-shadow: black 2px 2px;
+    animation: pulse 1s infinite ease-in-out;
 }
 
 
 .status-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 0.75rem;
+    font-family: 'Pirata One', cursive;
+    font-size: 1.0rem;
     font-weight: 700;
     letter-spacing: 2px;
     color: #ff0033;
-    text-shadow: 0 0 8px rgba(255, 0, 51, 0.5);
+    text-shadow: black 2px 2px;
 }
 
 /* ENLACES SUPERIORES */
@@ -215,10 +224,6 @@ body, html {
     box-shadow: 0 0 10px rgba(255, 0, 51, 0.4);
 }
 
-.music-toggle-btn.playing .music-icon {
-    animation: musicPulse 1.8s infinite ease-in-out;
-}
-
 .loading-builder {
     display: flex;
     justify-content: center;
@@ -236,6 +241,15 @@ body, html {
     animation-delay: calc(0.05s * var(--i));
 }
 
+
+
+.loading-builder .dots {
+    animation: dotsBlink 1.5s infinite steps(4, end);
+}
+
+
+/* ANIMACIONES */
+
 @keyframes strictJump {
     0%, 70%, 100% {
         transform: translateY(0);
@@ -248,10 +262,6 @@ body, html {
     }
 }
 
-.loading-builder .dots {
-    animation: dotsBlink 1.5s infinite steps(4, end);
-}
-
 @keyframes dotsBlink {
     0% { content: "."; }
     33% { content: ".."; }
@@ -259,14 +269,6 @@ body, html {
     100% { content: ""; }
 }
 
-@keyframes musicPulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.15); opacity: 1; }
-}
-
-
-
-/* ANIMACIONES */
 @keyframes pulse {
     0%, 100% { opacity: 0.4; }
     50% { opacity: 1; }

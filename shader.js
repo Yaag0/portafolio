@@ -109,7 +109,7 @@ void main() {
     density = smoothstep(0.2, 0.7, density);
     density *= smoothstep(0.1, 0.4, distFromCenter);
 
-    float cloudFade = smoothstep(0.8, 0.0, u_scroll);
+    float cloudFade = smoothstep(1.0, 0.0, u_scroll);
     density *= cloudFade;
 
     float cloudColor = engravingStyle(gl_FragCoord.xy, density);
