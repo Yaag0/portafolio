@@ -5,11 +5,11 @@
 }
 
 ::selection {
-    background-color: #ff0033;
+    background-color: #93C5FD;
     color: #000000;           
 }
 ::-webkit-selection {
-    background-color: #ff0033;
+    background-color: #93C5FD;
     color: #000000;
 }
 
@@ -45,7 +45,7 @@ body, html {
 
 .status-dot {
     font-size: 1rem; 
-    color: #ff0033;
+    color: #93C5FD;
     text-shadow: black 2px 2px;
     animation: pulse 1s infinite ease-in-out;
 }
@@ -56,7 +56,7 @@ body, html {
     font-size: 1.0rem;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #ff0033;
+    color: #93C5FD;
     text-shadow: black 2px 2px;
 }
 
@@ -75,16 +75,15 @@ body, html {
     font-family: 'Pirata One', cursive;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    color: #000;
+    color: #d1d5db;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .cloud-link:hover {
     transform: translateY(-2px);
-    color: #ff0033;
+    color: #93C5FD;
 }
 
 /* ESTRUCTURA DE SCROLL */
@@ -124,25 +123,28 @@ body, html {
     font-size: 8rem;
     letter-spacing: 8px;
     line-height: 0.85;
-    color: #ffffff;
+    color: #E6E1D7;
     text-transform: uppercase;
-    text-shadow: 0 0 20px #000, 0 0 40px #000;
+    /* Cambiamos a sombras múltiples: una de corte negro sólido y un halo más amplio */
+    text-shadow: 2px 2px 4px #000000, 0 0 25px rgba(0, 0, 0, 0.95), 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
 .author-real-name {
     font-family: 'Pirata One', cursive;
     font-size: 2rem;
     letter-spacing: 4px;
-    color: #aaaaaa;
+    color: #E6E1D7;
     margin-top: 1.2rem;
+    text-shadow: 2px 2px 4px #000000, 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 .author-subtitle {
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
     letter-spacing: 4px;
-    color: #888888;
+    color: #d1d5db;
     margin-top: 0.4rem;
+    text-shadow: 2px 2px 4px #000000, 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 /* SOBRE MÍ */
@@ -219,9 +221,8 @@ body, html {
 }
 
 .music-toggle-btn.playing {
-    border-color: #ff0033;
-    color: #ff0033;
-    box-shadow: 0 0 10px rgba(255, 0, 51, 0.4);
+    border-color: #93C5FD;
+    color: #93C5FD;
 }
 
 .loading-builder {
@@ -230,8 +231,7 @@ body, html {
     font-family: 'Space Mono', monospace;
     font-size: 0.75rem;
     letter-spacing: 3px;
-    color: #ff0033;
-    text-shadow: 0 0 8px rgba(255, 0, 51, 0.904);
+    color: #93C5FD;
     margin-top: 1.5rem;
 }
 
@@ -258,7 +258,7 @@ body, html {
     15% {
         transform: translateY(-5px);
         opacity: 1;
-        text-shadow: 0 0 12px #ff0033;
+        text-shadow: 0 0 12px #93C5FD;
     }
 }
 
